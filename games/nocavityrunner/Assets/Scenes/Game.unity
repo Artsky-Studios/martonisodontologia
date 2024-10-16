@@ -411,7 +411,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -725,7 +725,7 @@ GameObject:
   - component: {fileID: 358441155}
   - component: {fileID: 358441156}
   m_Layer: 0
-  m_Name: Tooth
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -772,7 +772,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -601717820, guid: 882d2dabe6f3f51489972e9bc26be5ae, type: 3}
+  m_Sprite: {fileID: -321737797, guid: be48cbc4fafff234eb9c35d44f98b416, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

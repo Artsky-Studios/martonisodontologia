@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 882d2dabe6f3f51489972e9bc26be5ae
+guid: 8fdae9f0854b96442a8716e5bef6b386
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,133 +127,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Tooth_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 94.833336
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bfbe1bd8b9f14248b956d3fbdafaffb
-      internalID: -601717820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tooth_1
-      rect:
-        serializedVersion: 2
-        x: 94
-        y: 0
-        width: 94.833336
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d56e2cd99065d0944b7c0caadc8bd56d
-      internalID: 883537977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tooth_2
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 0
-        width: 94.833336
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b71c4a12a1c21af44b9278773ac2ba5d
-      internalID: -1935600014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tooth_3
-      rect:
-        serializedVersion: 2
-        x: 282
-        y: 0
-        width: 94.833336
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a1c86f20a5b19a4886fd082f86f771a
-      internalID: 645529117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tooth_4
-      rect:
-        serializedVersion: 2
-        x: 376
-        y: 0
-        width: 94.833336
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cc8f94ab8ec08c40977624cc679b7f0
-      internalID: 1896439658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tooth_5
-      rect:
-        serializedVersion: 2
-        x: 470
-        y: 0
-        width: 94.833336
-        height: 95
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51e7c488afb11fd4a9a54c9340cee58a
-      internalID: -264321675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -264,13 +138,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Tooth_0: -601717820
-      Tooth_1: 883537977
-      Tooth_2: -1935600014
-      Tooth_3: 645529117
-      Tooth_4: 1896439658
-      Tooth_5: -264321675
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
