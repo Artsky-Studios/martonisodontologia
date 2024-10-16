@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,7 +35,10 @@ public class Jogador : MonoBehaviour
     public AudioSource fimDeJogoAudioSource;
 
     public GameObject reiniciarButton;
+    public GameObject rank;
+    public GameObject inputPlayer;
 
+    private LeaderboardController leaderboarder;
     private void Start()
     {
         highscore = PlayerPrefs.GetFloat("HIGHSCORE");
@@ -133,11 +137,15 @@ public class Jogador : MonoBehaviour
                 highscore = pontos;
 
                 PlayerPrefs.SetFloat("HIGHSCORE", highscore);
+
             }
 
             fimDeJogoAudioSource.Play();
 
             reiniciarButton.SetActive(true);
+            rank.SetActive(true);
+            inputPlayer.SetActive(true);
+
 
             Time.timeScale = 0;
         }
