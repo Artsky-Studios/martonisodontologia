@@ -1,0 +1,79 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('imgs/background.jpg') no-repeat center calc(100% + 0.5cm);
+  background-size: cover;
+}
+
+.world {
+  overflow: hidden;
+  position: relative;
+}
+
+.score {
+  position: absolute;
+  font-size: 5vmin; /* Ajuste o tamanho conforme necessário */
+  right: 2vmin; /* Distância da borda direita */
+  top: 1vmin;   /* Distância do topo */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+  color: white; /* Cor do texto */
+  padding: 0.5em 1em; /* Espaçamento interno */
+  border-radius: 10px; /* Borda arredondada */
+  font-family: 'Arial', sans-serif; /* Fonte limpa e moderna */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+  transition: transform 0.3s ease-in-out, background-color 0.3s; /* Animações suaves */
+}
+
+.score.new-score {
+  background-color: rgba(255, 215, 0, 0.7); /* Cor de destaque para novo ponto */
+  transform: scale(1.2); /* Efeito de aumento ao fazer ponto */
+}
+
+.score:hover {
+  background-color: rgba(255, 215, 0, 0.8); /* Alterar cor ao passar o mouse */
+  transform: scale(1.1); /* Efeito de hover */
+}
+
+
+.start-screen {
+  position: absolute;
+  font-size: 5vmin;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
+
+.ground {
+  --left: 0;
+  position: absolute;
+  width: 300%;
+  bottom: 0;
+  left: calc(var(--left) * 1%)
+}
+
+.dino {
+  --bottom: 0;
+  position: absolute;
+  left: 1%;
+  height: 30%;
+  bottom: calc(var(--bottom) * 1%);
+}
+
+.cactus {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 30%;
+  bottom: 0;
+}
