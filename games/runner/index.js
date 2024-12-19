@@ -95,7 +95,7 @@ function setScreen() {
 
 setScreen();
 //Use setTimeout on Safari mobile rotation otherwise works fine on desktop
-window.addEventListener("resize", () => setTimeout(setScreen, 500));
+window.addEventListener("resize", () => setTimeout(setScreen, 400));
 
 if (screen.orientation) {
   screen.orientation.addEventListener("change", setScreen);
@@ -151,12 +151,12 @@ function reset() {
 }
 
 function showStartGameText() {
-  const fontSize = 40 * scaleRatio;
+  const fontSize = 30 * scaleRatio;
   ctx.font = `${fontSize}px Verdana`;
   ctx.fillStyle = "white";
   const x = canvas.width / 14;
   const y = canvas.height / 2;
-  ctx.fillText("Toque na Tela ou Pressione Espaço", x, y);
+  ctx.fillText("Toque na Tela ou Pressione Espaço. Para uma melhor experiência, vire a tela do seu celular.", x, y);
 }
 
 function updateGameSpeed(frameTimeDelta) {
