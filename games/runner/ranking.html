@@ -5,29 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ranking</title>
   <link rel="stylesheet" href="ranking.css">
+  <!-- Adicionar o link da fonte no head -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <h1>Ranking</h1>
-    
-    <!-- Exibe a pontuação obtida -->
-    <div class="score-display">
-      <p>Sua pontuação: <span id="playerScore">0</span></p>
-    </div>
-    
-    <form id="playerForm" class="form">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" placeholder="Digite seu nome" required>
+    <div class="container">
+        <div class="form-section">
+          <h1>Ranking</h1>
+          
+          <!-- Exibe a pontuação obtida -->
+          <div class="score-display">
+            <p>Sua pontuação: <span id="playerScore">0</span></p>
+          </div>
+          
+          <form id="playerForm" class="form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Digite seu nome" required>
+            
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" placeholder="Digite seu telefone" required>
+            
+            <button type="submit">Salvar</button>
+          </form>
+        </div>
       
-      <label for="phone">Telefone:</label>
-      <input type="text" id="phone" placeholder="Digite seu telefone" required>
-      
-      <button type="submit">Salvar</button>
-    </form>
-    
-    <h2>Ranking de Jogadores:</h2>
-    <ul id="rankingList" class="ranking-list"></ul>
-  </div>
+        <div class="ranking-section">
+          <h2>Ranking de Jogadores:</h2>
+          <ul id="rankingList" class="ranking-list">
+            <!-- O ranking será preenchido dinamicamente -->
+          </ul>
+        </div>
+      </div>    
 
   <script type="module" src="ranking.js"></script>
 </body>
