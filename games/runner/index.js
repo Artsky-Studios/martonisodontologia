@@ -85,6 +85,7 @@ function createSprites() {
 }
 
 function lockScreenOrientation() {
+  // Verifica se a API de orientação está disponível
   if (screen.orientation && typeof screen.orientation.lock === "function") {
     // Tenta bloquear a orientação em paisagem
     screen.orientation.lock("landscape").catch((error) => {
@@ -95,10 +96,38 @@ function lockScreenOrientation() {
   }
 }
 
-// Detecta se está no mobile e tenta bloquear a orientação
-if (/Mobi|Android/i.test(navigator.userAgent)) {
-  lockScreenOrientation();
+function requestFullscreenAndLockOrientation() {
+  // Verifica se a API Fullscreen está disponível
+  const elem = document.documentElement; // Usa o elemento principal do documento
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen()
+      .then(() => {
+        // Após entrar no modo fullscreen, tenta bloquear a orientação
+        lockScreenOrientation();
+      })
+      .catch((error) => {
+        console.warn("Erro ao entrar em modo fullscreen: ", error);
+      });
+  } else if (elem.webkitRequestFullscreen) {
+    // Compatibilidade com navegadores baseados em WebKit (ex.: Safari)
+    elem.webkitRequestFullscreen();
+    lockScreenOrientation();
+  } else {
+    console.warn("API de Fullscreen não suportada.");
+  }
 }
+
+// Detecta se está no mobile e tenta forçar o fullscreen e bloquear a orientação
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+  requestFullscreenAndLockOrientation();
+}
+
+// Opcional: Vincular a um evento de clique caso o navegador não permita fullscreen automático
+document.addEventListener("click", () => {
+  if (!document.fullscreenElement) {
+    requestFullscreenAndLockOrientation();
+  }
+});
 
 function setScreen() {
   lockScreenOrientation();
