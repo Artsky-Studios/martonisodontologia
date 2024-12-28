@@ -10,6 +10,11 @@ export default class Score {
 
   update(frameTimeDelta) {
     this.score += frameTimeDelta * 0.01;
+
+    const scoreSound = new Audio("sons/hit_sound.mp3");
+    if (Math.floor(this.score) % 50 === 0) {
+      scoreSound.play();
+    }
   }
 
   reset() {

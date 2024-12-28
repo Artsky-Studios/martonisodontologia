@@ -52,6 +52,9 @@ export default class Player {
 
   touchstart = () => {
     this.jumpPressed = true;
+
+    const jumpSong = new Audio("sons/press_sound.mp3");
+    jumpSong.play();
   };
 
   touchend = () => {
@@ -62,6 +65,9 @@ export default class Player {
     if (event.code === "Space") {
       this.jumpPressed = true;
     }
+
+    const jumpSong = new Audio("sons/press_sound.mp3");
+    jumpSong.play();
   };
 
   keyup = (event) => {
